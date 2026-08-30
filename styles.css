@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Michael J. Muirhead — Municipal Electric Utility Consulting
+   Michael Muirhead — Municipal Electric Utility Consulting
    Design system: warm paper ground, deep utility navy, copper accent.
    Type: Source Serif 4 (display) + Inter (text/UI).
    ========================================================================== */
@@ -10,11 +10,13 @@
   --card: #fffdf9;
   --ink: #1b2837;
   --ink-soft: #45556a;
-  --ink-faint: #6b7a8d;
+  --ink-faint: #5a6a7c;
   --navy: #132433;
   --navy-deep: #0d1a26;
   --navy-line: #2c4257;
   --copper: #b96b24;
+  --copper-text: #96541b;
+  --copper-deep: #a85f1e;
   --copper-bright: #d98a3a;
   --copper-soft: #f3e2cd;
   --line: #ddd5c6;
@@ -64,8 +66,8 @@ h1, h2, h3, h4 {
 
 p { margin: 0; }
 
-a { color: var(--copper); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-a:hover { color: var(--copper-bright); }
+a { color: var(--copper-text); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
 
 :focus-visible {
   outline: 2px solid var(--copper);
@@ -115,7 +117,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--copper);
+  color: var(--copper-text);
   margin-bottom: 1.1rem;
 }
 
@@ -144,6 +146,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   text-decoration: none;
   border-radius: 999px;
   padding: 0.8rem 1.6rem;
+  white-space: nowrap;
   transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 .btn:active { transform: translateY(1px); }
@@ -153,21 +156,21 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--paper-on-navy);
   border: 1px solid var(--navy);
 }
-.btn-solid:hover { background: var(--copper); border-color: var(--copper); color: #fff; }
+.btn-solid:hover { background: var(--copper-deep); border-color: var(--copper-deep); color: #fff; }
 
 .btn-ghost {
   background: transparent;
   color: var(--ink);
   border: 1px solid var(--line);
 }
-.btn-ghost:hover { border-color: var(--copper); color: var(--copper); }
+.btn-ghost:hover { border-color: var(--copper-text); color: var(--copper-text); }
 
 .btn-copper {
-  background: var(--copper);
+  background: var(--copper-deep);
   color: #fff;
-  border: 1px solid var(--copper);
+  border: 1px solid var(--copper-deep);
 }
-.btn-copper:hover { background: var(--copper-bright); border-color: var(--copper-bright); color: #fff; }
+.btn-copper:hover { background: var(--copper-text); border-color: var(--copper-text); color: #fff; }
 
 /* Header ----------------------------------------------------------------- */
 
@@ -219,13 +222,14 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
 }
 
 .site-nav { display: flex; align-items: center; gap: clamp(1rem, 2.5vw, 2rem); }
-.site-nav a {
+.site-nav a:not(.btn) {
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--ink-soft);
   text-decoration: none;
+  white-space: nowrap;
 }
-.site-nav a:hover { color: var(--copper); }
+.site-nav a:not(.btn):hover { color: var(--copper-text); }
 .site-nav .btn { padding: 0.55rem 1.15rem; }
 
 .nav-links { display: flex; gap: clamp(1rem, 2.5vw, 2rem); }
@@ -278,6 +282,9 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   padding: 0.75rem clamp(1.25rem, 4vw, 2.5rem) 1.25rem;
   border-top: 1px solid var(--line-soft);
   background: var(--paper);
+  max-height: calc(100vh - 4.75rem);
+  max-height: calc(100dvh - 4.75rem);
+  overflow-y: auto;
 }
 .mobile-menu[hidden] { display: none; }
 .mobile-menu a:not(.btn) {
@@ -289,7 +296,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   text-decoration: none;
   border-bottom: 1px solid var(--line-soft);
 }
-.mobile-menu a:not(.btn):hover { color: var(--copper); }
+.mobile-menu a:not(.btn):hover { color: var(--copper-text); }
 .mobile-menu .btn {
   margin-top: 1rem;
   justify-content: center;
@@ -370,7 +377,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--navy);
   line-height: 1.05;
 }
-.stat-num sup { font-size: 0.55em; color: var(--copper); }
+.stat-num sup { font-size: 0.55em; color: var(--copper-text); }
 .stat-label {
   margin-top: 0.5rem;
   font-size: 0.8125rem;
@@ -413,7 +420,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   position: relative;
   padding: 1.4rem 1.5rem;
   color: var(--paper-on-navy);
-  background: linear-gradient(to top, rgba(13, 26, 38, 0.92), rgba(13, 26, 38, 0));
+  background: linear-gradient(to top, rgba(13, 26, 38, 0.96) 45%, rgba(13, 26, 38, 0));
   width: 100%;
 }
 .portrait-caption strong {
@@ -508,6 +515,9 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   font-size: 1.28rem;
   letter-spacing: -0.005em;
 }
+@media (min-width: 701px) {
+  .service-card h3 { min-height: 2.3em; }
+}
 .service-card p {
   margin-top: 0.7rem;
   font-size: 0.9375rem;
@@ -569,12 +579,13 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--paper-on-navy);
   padding-block: clamp(3.5rem, 7vw, 5.5rem);
 }
-.quote-band blockquote {
+.quote-band figure {
   margin: 0;
   max-width: 54rem;
   margin-inline: auto;
   text-align: center;
 }
+.quote-band blockquote { margin: 0; }
 .quote-band .quote-mark {
   color: var(--copper-bright);
   font-family: var(--font-display);
@@ -589,7 +600,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   font-style: italic;
   line-height: 1.45;
 }
-.quote-band footer {
+.quote-band figcaption {
   margin-top: 1.6rem;
   font-size: 0.875rem;
   letter-spacing: 0.08em;
@@ -605,21 +616,22 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   list-style: none;
   position: relative;
 }
-.timeline-list::before {
-  content: "";
-  position: absolute;
-  left: 0.55rem;
-  top: 0.4rem;
-  bottom: 0.4rem;
-  width: 2px;
-  background: var(--line);
-}
 
 .timeline-item {
   position: relative;
   padding: 0 0 2.8rem 2.9rem;
 }
 .timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: 0.47rem;
+  top: 1.7rem;
+  bottom: -0.35rem;
+  width: 2px;
+  background: var(--line);
+}
+.timeline-item:last-child::after { display: none; }
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -638,7 +650,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--copper);
+  color: var(--copper-text);
 }
 .timeline-item h3 {
   margin-top: 0.4rem;
@@ -668,12 +680,13 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
 
 /* Testimonials ----------------------------------------------------------- */
 
+.testimonials { border-top: 1px solid var(--line-soft); }
+
 .testimonial-grid {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.4rem;
-  align-items: start;
 }
 
 .testimonial-card {
@@ -684,6 +697,8 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   border-radius: var(--radius);
   padding: 2rem 1.9rem;
   box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
 }
 .testimonial-card blockquote { margin: 0; }
 .testimonial-card blockquote p {
@@ -694,10 +709,11 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--ink);
 }
 .testimonial-card figcaption {
-  margin-top: 1.4rem;
+  margin-top: auto;
   padding-top: 1.1rem;
   border-top: 1px solid var(--line-soft);
 }
+.testimonial-card blockquote { margin-bottom: 1.4rem; }
 .testimonial-card figcaption strong {
   display: block;
   font-size: 0.975rem;
@@ -752,7 +768,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--copper);
+  color: var(--copper-text);
 }
 .award-card p {
   margin-top: 0.65rem;
@@ -809,6 +825,14 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--paper-on-navy);
   opacity: 0.06;
 }
+.contact-panel .btn-ghost {
+  border-color: var(--navy-line);
+  color: var(--paper-on-navy);
+}
+.contact-panel .btn-ghost:hover {
+  border-color: var(--copper-bright);
+  color: var(--copper-bright);
+}
 .contact-panel > :not(.contact-bg) { position: relative; }
 
 /* Footer ----------------------------------------------------------------- */
@@ -827,8 +851,13 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--ink-faint);
 }
 .footer-inner nav { display: flex; gap: 1.5rem; }
-.footer-inner a { color: var(--ink-faint); text-decoration: none; }
-.footer-inner a:hover { color: var(--copper); }
+.footer-inner a {
+  color: var(--ink-faint);
+  text-decoration: none;
+  padding: 0.65rem 0.4rem;
+  margin-inline: -0.4rem;
+}
+.footer-inner a:hover { color: var(--copper-text); }
 
 /* Motion ----------------------------------------------------------------- */
 
@@ -845,7 +874,7 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .about-grid, .experience-grid { grid-template-columns: 1fr; }
   .about-portrait, .experience-aside { position: static; }
-  .portrait-frame { max-width: 420px; aspect-ratio: 4 / 3.4; }
+  .portrait-frame { max-width: 420px; }
   .statbar-grid { grid-template-columns: 1fr 1fr; }
   .stat:nth-child(3) { border-left: none; }
   .stat { border-top: 1px solid var(--line); }
@@ -856,13 +885,16 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   .testimonial-grid { grid-template-columns: 1fr; }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 1025px) {
   .menu-toggle, .mobile-menu { display: none; }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .site-nav { display: none; }
   .menu-toggle { display: flex; }
+}
+
+@media (max-width: 700px) {
   .services-grid, .awards-grid { grid-template-columns: 1fr; }
   .about-marks { grid-template-columns: 1fr; }
   .award-card { grid-template-columns: 52px 1fr; }
@@ -876,7 +908,6 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   .contact-meta { flex-direction: column; gap: 0.75rem; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .footer-inner nav { flex-wrap: wrap; gap: 0.5rem 1.5rem; }
-  .footer-inner nav a { padding-block: 0.35rem; }
 }
 
 @media (max-width: 520px) {
@@ -887,12 +918,11 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   .statbar-grid { grid-template-columns: 1fr 1fr; }
   .stat { padding: 1.3rem 0.6rem; }
   .stat-num { font-size: 1.7rem; }
-  .stat-label { font-size: 0.72rem; }
+  .stat-label { font-size: 0.8125rem; }
   .stat-label br { display: none; }
-  .portrait-frame { aspect-ratio: 4 / 3; }
   .portrait-caption { padding: 1.1rem 1.15rem; }
   .service-card { padding: 1.5rem 1.3rem; }
   .award-card { grid-template-columns: 1fr; gap: 0.9rem; padding: 1.4rem 1.3rem; }
-  .contact-panel { border-radius: 12px; }
+  .contact-panel { border-radius: 12px; padding: 2.25rem 1.4rem; }
   .contact-panel h2 { max-width: none; }
 }

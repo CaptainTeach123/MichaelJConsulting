@@ -53,6 +53,9 @@ The site is ready for any static host. For GitHub Pages: repository
       and Mike's own quotes were recovered from public articles via search
       excerpts; verify exact wording against the original announcements
       before launch.
+- [ ] **Social preview**: once the final domain is settled, uncomment the
+      `og:url` / `og:image` tags in `index.html` and point them at the
+      domain (an `og-image.png` card ships in this repo).
 - [ ] Review all copy for accuracy with Mike, especially dates and figures.
 
 ## Sources
@@ -60,7 +63,7 @@ The site is ready for any static host. For GitHub Pages: repository
 Site copy is drawn from public coverage of Mike's career, including:
 
 - City of Garden City, KS — "Garden City Public Works & Utilities Director
-  Mike Muirhead Announces Retirement" (June 2026)
+  Mike Muirhead Announces Retirement" (2026)
 - KMEA — "Celebrating Mike Muirhead's Retirement and Years of Service";
   Gilbert E. Hanson Jr. Outstanding Service Award (2020/2021); Mark Crisson
   Award coverage

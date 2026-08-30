@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Muirhead | Municipal Electric Utility Consulting</title>
-  <meta name="description" content="Michael Muirhead brings a public power career spanning lineman to city administrator to utility director — 16 years leading Garden City, Kansas's utilities and 15 years of KMEA executive leadership — to municipal electric utilities as a consultant.">
+  <meta name="description" content="Municipal electric utility consulting from Michael Muirhead — lineman, city administrator, and for 16 years Garden City, Kansas's utility director.">
   <meta property="og:title" content="Michael Muirhead | Municipal Electric Utility Consulting">
   <meta property="og:description" content="Public power expertise from the line crew to the boardroom. Consulting for municipal electric utilities, joint action agencies, and the communities they serve.">
   <meta property="og:type" content="website">
+  <!-- TODO before launch: once the final domain is settled, set the absolute URLs below
+       (og:image should point at og-image.png, a 1200x630 card included in this repo). -->
+  <!-- <meta property="og:url" content="https://YOUR-DOMAIN/"> -->
+  <!-- <meta property="og:image" content="https://YOUR-DOMAIN/og-image.png"> -->
   <meta name="theme-color" content="#f7f4ee">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,7 +74,7 @@
         <div>
           <p class="eyebrow">Municipal Electric Utility Consulting</p>
           <h1>Public power expertise, from the line crew to the <em>boardroom</em>.</h1>
-          <p class="lede">Michael Muirhead has spent his career inside municipal electric utilities — as a lineman, an electric department director, a city administrator, and for sixteen years the utility director for Garden City, Kansas. Now he helps public power communities, city managers, and utility boards plan, build, and lead with the same care he brought to his own.</p>
+          <p class="lede">Michael Muirhead has spent his career inside municipal electric utilities — as a lineman, an electric department director, a city administrator, and, for sixteen years, the utility director for Garden City, Kansas. Now he helps public power communities, city managers, and utility boards plan, build, and lead with the same care he brought to his own.</p>
           <div class="hero-ctas">
             <a class="btn btn-copper" href="#contact">Start a conversation</a>
             <a class="btn btn-ghost" href="#record">See the track record</a>
@@ -78,13 +82,27 @@
         </div>
         <div class="hero-art" aria-hidden="true">
           <svg viewBox="0 0 360 420" fill="none">
+            <defs>
+              <linearGradient id="cable-fade-l" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="130" y2="0">
+                <stop offset="0" stop-color="#45556a" stop-opacity="0"/>
+                <stop offset="1" stop-color="#45556a" stop-opacity="1"/>
+              </linearGradient>
+              <linearGradient id="cable-fade-r" gradientUnits="userSpaceOnUse" x1="230" y1="0" x2="360" y2="0">
+                <stop offset="0" stop-color="#45556a" stop-opacity="1"/>
+                <stop offset="1" stop-color="#45556a" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="cable-fade-r-copper" gradientUnits="userSpaceOnUse" x1="234" y1="0" x2="360" y2="0">
+                <stop offset="0" stop-color="#b96b24" stop-opacity="1"/>
+                <stop offset="1" stop-color="#b96b24" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
             <!-- transmission cables -->
-            <path d="M0 130 Q 70 108 146 104" stroke="#45556a" stroke-width="1.5"/>
-            <path d="M214 104 Q 290 108 360 130" stroke="#45556a" stroke-width="1.5"/>
-            <path d="M0 160 Q 70 140 126 134" stroke="#45556a" stroke-width="1.5"/>
-            <path d="M234 134 Q 290 140 360 160" stroke="#b96b24" stroke-width="1.5"/>
-            <path d="M0 212 Q 60 192 106 184" stroke="#45556a" stroke-width="1.5"/>
-            <path d="M254 184 Q 300 192 360 212" stroke="#45556a" stroke-width="1.5"/>
+            <path d="M0 130 Q 70 108 146 104" stroke="url(#cable-fade-l)" stroke-width="1.5"/>
+            <path d="M214 104 Q 290 108 360 130" stroke="url(#cable-fade-r)" stroke-width="1.5"/>
+            <path d="M0 160 Q 70 140 126 134" stroke="url(#cable-fade-l)" stroke-width="1.5"/>
+            <path d="M234 134 Q 290 140 360 160" stroke="url(#cable-fade-r-copper)" stroke-width="1.5"/>
+            <path d="M0 212 Q 60 192 106 184" stroke="url(#cable-fade-l)" stroke-width="1.5"/>
+            <path d="M254 184 Q 300 192 360 212" stroke="url(#cable-fade-r)" stroke-width="1.5"/>
             <!-- tower legs and mast -->
             <path d="M140 400 L172 80 L180 40 L188 80 L220 400" stroke="#132433" stroke-width="2.5" stroke-linejoin="round"/>
             <!-- lattice bracing -->
@@ -115,19 +133,19 @@
       <div class="container statbar-grid">
         <div class="stat">
           <div class="stat-num">16</div>
-          <div class="stat-label">Years leading Garden City<br>Public Works &amp; Utilities</div>
+          <div class="stat-label">Years leading Garden City<br> Public Works &amp; Utilities</div>
         </div>
         <div class="stat">
           <div class="stat-num">$40M</div>
-          <div class="stat-label">Annual electric utility<br>budget managed</div>
+          <div class="stat-label">Annual electric utility<br> budget managed</div>
         </div>
         <div class="stat">
           <div class="stat-num">27<sup>MW</sup></div>
-          <div class="stat-label">Local generation developed<br>at the Jameson Energy Center</div>
+          <div class="stat-label">Local generation developed<br> at the Jameson Energy Center</div>
         </div>
         <div class="stat">
           <div class="stat-num">15</div>
-          <div class="stat-label">Years of KMEA Executive<br>Committee leadership</div>
+          <div class="stat-label">Years of KMEA Executive<br> Committee leadership</div>
         </div>
       </div>
     </section>
@@ -137,7 +155,7 @@
       <div class="container about-grid">
         <div class="about-portrait">
           <!-- TODO: replace the SVG below with a real portrait photograph of Mike
-               (e.g. <img src="assets/mike-muirhead.jpg" alt="Michael J. Muirhead">)
+               (e.g. <img src="assets/mike-muirhead.jpg" alt="Michael Muirhead">)
                and keep the caption block. -->
           <div class="portrait-frame">
             <svg class="portrait-art" viewBox="0 0 400 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -149,8 +167,8 @@
                 <path d="M-20 230 Q 130 190 200 210 T 420 190"/>
                 <path d="M-20 180 Q 140 145 200 160 T 420 140"/>
               </g>
-              <path d="M228 60 179 133h31l-10 51 55-75h-31z" fill="#d98a3a" opacity="0.9"/>
-              <text x="200" y="290" text-anchor="middle" font-family="'Source Serif 4', Georgia, serif" font-size="104" font-weight="600" fill="#f2ede3" opacity="0.95">MM</text>
+              <path d="M228 80 179 153h31l-10 51 55-75h-31z" fill="#d98a3a" opacity="0.9"/>
+              <text x="200" y="265" text-anchor="middle" font-family="'Source Serif 4', Georgia, serif" font-size="104" font-weight="600" fill="#f2ede3" opacity="0.95">MM</text>
             </svg>
             <div class="portrait-caption">
               <strong>Michael &ldquo;Mike&rdquo; Muirhead</strong>
@@ -159,16 +177,16 @@
           </div>
         </div>
         <div class="about-copy">
-          <p class="eyebrow">About Michael</p>
+          <p class="eyebrow">About Mike</p>
           <h2>Experience you can't shortcut.</h2>
           <p class="opening">Some consultants have studied municipal utilities. Mike Muirhead has climbed their poles, run their crews, built their power plants, balanced their budgets, and defended them in Topeka and Washington, D.C.</p>
           <p>Mike's career began on the line, as a lineman for Sturgeon Electric in Colorado. He took his trade to the municipal electric department of Gillette, Wyoming, where he rose through the ranks — serving the city in many capacities over the years, including Electric Department Director and, ultimately, City Administrator.</p>
-          <p>In January 2010 he joined the City of Garden City, Kansas as Public Utilities Director — a role that grew into Director of Public Works &amp; Utilities, spanning electric, water, wastewater, streets, and beyond. Over sixteen years he guided a transformation of the city's electric utility: a power-supply overhaul that ended three decades of full-requirements dependence and saved millions of dollars a year, the Jameson Energy Center and its three 9&nbsp;MW Siemens gas turbines, and the reliability programs that carried the utility to APPA's Platinum-level Reliable Public Power Provider designation.</p>
-          <p>Along the way he became one of Kansas public power's most trusted voices — serving on the Kansas Municipal Energy Agency's Executive Committee since 2011, including terms in every officer seat, serving as President of Kansas Municipal Utilities, and advocating for municipal utilities before legislators in Topeka and Washington, D.C.</p>
+          <p>In January 2010 he joined the City of Garden City, Kansas, as Public Utilities Director — a role that grew into Director of Public Works &amp; Utilities, spanning electric, water, wastewater, streets, and beyond. Over sixteen years he guided a transformation of the city's electric utility: a power-supply overhaul that ended three decades of full-requirements dependence and saved millions of dollars a year, the Jameson Energy Center and its three 9&nbsp;MW Siemens gas turbines, and the reliability programs that carried the utility to APPA's Platinum-level Reliable Public Power Provider designation.</p>
+          <p>Along the way he became one of Kansas public power's most trusted voices — serving on the Kansas Municipal Energy Agency's Executive Committee from 2011 until his retirement, including terms in every officer seat; serving as President of Kansas Municipal Utilities; and advocating for municipal utilities before state and federal legislators.</p>
           <ul class="about-marks">
             <li>Lineman by trade — a career that began on the line</li>
             <li>Former City Administrator, Gillette, Wyoming</li>
-            <li>KMEA Executive Committee since 2011 — President, Vice President &amp; Secretary/Treasurer</li>
+            <li>KMEA Executive Committee, 2011–2026 — President, Vice President &amp; Secretary/Treasurer</li>
             <li>Past President, Kansas Municipal Utilities</li>
             <li>APPA Mark Crisson Leadership Award, 2023</li>
             <li>Led a Platinum-level Reliable Public Power Provider</li>
@@ -191,7 +209,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13 2 4.5 14H11l-1.2 8L18.5 10H12z"/></svg>
             </div>
             <h3>Power Supply &amp; Generation Strategy</h3>
-            <p>Portfolio evaluation, generation planning, and power-supply transitions that put ratepayers first — informed by guiding Garden City's supply overhaul, which saved millions of dollars a year, and developing 27&nbsp;MW of local generation.</p>
+            <p>Portfolio evaluation, generation planning, and power-supply transitions that put ratepayers first — informed by guiding Garden City's power-supply overhaul and developing 27&nbsp;MW of local generation.</p>
           </article>
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
@@ -219,14 +237,14 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16 15.2c2.3.2 4 1.8 4.5 4.3"/></svg>
             </div>
             <h3>Executive Leadership &amp; Succession</h3>
-            <p>Interim leadership, director mentoring, and succession planning that keep a utility steady through transitions — the way Mike prepared his own successor before stepping away from Garden City.</p>
+            <p>Interim leadership, director mentoring, and succession planning that keep a utility steady through transitions — with the master-plan discipline that gives newer staff real continuity.</p>
           </article>
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3.5 8h17z"/><path d="M5 8v8M9.5 8v8M14.5 8v8M19 8v8"/><path d="M3.5 19h17M3 21.5h18"/></svg>
             </div>
             <h3>Advocacy &amp; Joint Action</h3>
-            <p>A seasoned, respected voice for public power before legislators, regulators, and joint action agencies — built on fifteen years of KMEA executive leadership, a KMU presidency, and advocacy in Topeka and Washington, D.C.</p>
+            <p>A seasoned, respected voice for public power before legislators, regulators, and joint action agencies — built on fifteen years of KMEA executive leadership, a KMU presidency, and advocacy before state and federal lawmakers.</p>
           </article>
         </div>
       </div>
@@ -252,7 +270,7 @@
             <div class="record-index">02</div>
             <div>
               <h3>Jameson Energy Center</h3>
-              <p>Instrumental in developing a new energy center with KMEA, anchored by <strong>three 9&nbsp;MW Siemens SGT-400 gas turbines</strong> — roughly 27&nbsp;MW of local peaking and backup generation stabilizing the city's energy costs.</p>
+              <p>Partnered with KMEA to develop a new energy center anchored by <strong>three 9&nbsp;MW Siemens SGT-400 gas turbines</strong> — roughly 27&nbsp;MW of local peaking and backup generation stabilizing the city's energy costs.</p>
             </div>
           </div>
           <div class="record-item">
@@ -266,7 +284,7 @@
             <div class="record-index">04</div>
             <div>
               <h3>Recognized reliability</h3>
-              <p>Carried the utility to APPA's <strong>Platinum-level Reliable Public Power Provider</strong> designation — backed by 250+ poles replaced, upgraded AMI, SCADA, and outage-management systems, and direct substation access that cut response times.</p>
+              <p>Led the utility to APPA's <strong>Platinum-level Reliable Public Power Provider</strong> designation — backed by 250+ poles replaced, upgraded AMI, SCADA, and outage-management systems, and direct substation access that cut response times.</p>
             </div>
           </div>
           <div class="record-item">
@@ -280,7 +298,7 @@
             <div class="record-index">06</div>
             <div>
               <h3>A plan for the next generation</h3>
-              <p>Completed an <strong>electric utility master plan</strong>, modernized utility billing, and prepared his own successor — the continuity a public utility depends on.</p>
+              <p>Completed an <strong>electric utility master plan</strong> to guide the system for years to come, and modernized utility billing — the continuity a public utility depends on.</p>
             </div>
           </div>
         </div>
@@ -290,11 +308,13 @@
     <!-- ============================ QUOTE BAND ============================= -->
     <section class="quote-band" aria-label="Quote from Mike Muirhead">
       <div class="container">
-        <blockquote>
-          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-          <p>Perhaps one of the best ways we engage the community is by providing reliable, safe, low-cost electric power for the Garden City community on a 24-hour/365-day need — just as we have done since 1914, when the municipal electric utility was created.</p>
-          <footer>— Mike Muirhead, in Public Power Current</footer>
-        </blockquote>
+        <figure>
+          <blockquote>
+            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+            <p>Perhaps one of the best ways we engage the community is by providing reliable, safe, low-cost electric power for the Garden City community on a 24-hour/365-day need, just as we have done since 1914 when the municipal electric utility was created.</p>
+          </blockquote>
+          <figcaption>— Mike Muirhead, on Garden City's utility, in Public Power Current</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -313,28 +333,28 @@
             <div class="timeline-era">The trade</div>
             <h3>Sturgeon Electric — Colorado</h3>
             <div class="timeline-role">Lineman</div>
-            <p>Mike's career began the way many great public power careers do: on the line, learning the craft of electrical work with one of the West's major electrical contractors.</p>
+            <p>Mike's career began the way many great public power careers do: on the line, learning the craft of electrical work as a lineman in Colorado.</p>
           </li>
           <li class="timeline-item">
             <div class="timeline-era">The rise</div>
             <h3>City of Gillette, Wyoming</h3>
             <div class="timeline-role">Lineman &rarr; Electric Department Director &rarr; City Administrator</div>
-            <p>Joining Gillette's municipal electric department as a young lineman, Mike went on to serve the city in many capacities — leading its electric department and ultimately serving as City Administrator, where utility leadership met city-wide governance.</p>
+            <p>Joining Gillette's municipal electric department as a young lineman, Mike rose to lead it — and ultimately to run the city as its Administrator, where utility leadership met city-wide governance.</p>
           </li>
           <li class="timeline-item">
             <div class="timeline-era">2010 – 2026</div>
             <h3>City of Garden City, Kansas</h3>
             <div class="timeline-role">Public Utilities Director &rarr; Director of Public Works &amp; Utilities</div>
-            <p>For sixteen years, Mike was responsible for the generation, transmission, and distribution of the city's electric power — and eventually the full sweep of public works, from water and wastewater to streets — managing a roughly $40 million electric utility budget and delivering the projects that define the system today.</p>
+            <p>Across that tenure, Mike was responsible for the generation, transmission, and distribution of the city's electric power — and eventually the full sweep of public works, from water and wastewater to streets — managing a roughly $40 million electric utility budget and delivering the projects that define the system today.</p>
           </li>
           <li class="timeline-item">
             <div class="timeline-era">2011 – 2026</div>
             <h3>Kansas Municipal Energy Agency</h3>
             <div class="timeline-role">Executive Committee — President, Vice President, Secretary/Treasurer</div>
-            <p>Fifteen years of elected leadership at Kansas's joint action agency for municipal energy — during his presidency, KMEA acquired Mid-States Energy Works and stood up its first electric line crew — and a constant, respected voice for municipal utilities in legislative circles, in Topeka and in Washington, D.C.</p>
+            <p>Fifteen years of elected leadership at Kansas's joint action agency for municipal energy. During his presidency, KMEA acquired Mid-States Energy Works and stood up its first electric line crew.</p>
           </li>
           <li class="timeline-item current">
-            <div class="timeline-era">2026 – Today</div>
+            <div class="timeline-era">Since 2026</div>
             <h3>Michael Muirhead Consulting</h3>
             <div class="timeline-role">Principal Consultant</div>
             <p>Now retired from Garden City, Mike brings the full weight of that career to municipal utilities, joint action agencies, and communities that want seasoned, practical guidance.</p>
@@ -443,11 +463,11 @@
           <div class="contact-ctas">
             <!-- TODO before launch: replace the placeholder address below with Mike's
                  real consulting email (the .example domain is a reserved placeholder). -->
-            <a class="btn btn-copper" href="mailto:mike@michaeljconsulting.example">Email Michael</a>
-            <a class="btn btn-ghost" style="border-color: var(--navy-line); color: var(--paper-on-navy);" href="#about">Read his story</a>
+            <a class="btn btn-copper" href="mailto:mike@michaeljconsulting.example">Email Mike</a>
+            <a class="btn btn-ghost" href="#about">Read his story</a>
           </div>
           <div class="contact-meta">
-            <span><strong>Based in</strong> Garden City, Kansas</span>
+            <span><strong>Rooted in</strong> Garden City, Kansas public power</span>
             <span><strong>Serving</strong> municipal utilities, joint action agencies &amp; communities nationwide</span>
           </div>
         </div>
@@ -473,15 +493,25 @@
       var toggle = document.querySelector(".menu-toggle");
       var menu = document.getElementById("mobile-menu");
       if (!toggle || !menu) return;
+      function close() {
+        toggle.setAttribute("aria-expanded", "false");
+        menu.hidden = true;
+      }
       toggle.addEventListener("click", function () {
         var open = toggle.getAttribute("aria-expanded") === "true";
         toggle.setAttribute("aria-expanded", String(!open));
         menu.hidden = open;
       });
       menu.addEventListener("click", function (e) {
-        if (e.target.closest("a")) {
-          toggle.setAttribute("aria-expanded", "false");
-          menu.hidden = true;
+        if (e.target.closest("a")) close();
+      });
+      document.addEventListener("click", function (e) {
+        if (!menu.hidden && !e.target.closest(".site-header")) close();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !menu.hidden) {
+          close();
+          toggle.focus();
         }
       });
     })();
