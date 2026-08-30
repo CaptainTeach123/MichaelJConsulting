@@ -203,18 +203,10 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--ink);
 }
 .brand-mark {
-  width: 52px;
-  height: 40px;
+  height: 46px;
+  width: auto;
   flex: none;
 }
-.brand-mark text {
-  font-family: var(--font-brand);
-  font-weight: 500;
-  font-size: 58px;
-  text-anchor: middle;
-}
-.brand-mark .mono-m { fill: var(--ink); }
-.brand-mark .mono-j { fill: var(--brand-gold); font-size: 64px; }
 .brand-name {
   font-family: var(--font-brand);
   font-weight: 600;

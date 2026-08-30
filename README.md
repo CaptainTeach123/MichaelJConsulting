@@ -17,7 +17,7 @@ Plain, dependency-free static HTML and CSS — no build step, no framework.
 - `styles.css` — design system and layout
 - `favicon.svg` — site icon (MJM monogram)
 - `og-image.png` — social-share preview card
-- `assets/` — put `mike-muirhead.jpg` (his portrait) here
+- `assets/` — Mike's portrait and the original logo file
 
 The MJM monogram from Mike's logo is recreated as scalable inline SVG
 (Cormorant Garamond with the gold J) in the header, favicon, and social
@@ -53,8 +53,6 @@ address — update them if the site later moves to a custom domain.)
       `mike@michaeljconsulting.example` (a reserved placeholder domain).
       Search for `TODO` in `index.html` and replace it with Mike's real
       consulting address.
-- [ ] **Portrait photo**: upload the portrait to `assets/mike-muirhead.jpg`
-      (see `assets/README.md`); the About section picks it up automatically.
 - [ ] **Quote check**: the two colleague quotes (Matt Allen, Paul Mahlberg)
       and Mike's own quotes were recovered from public articles via search
       excerpts; verify exact wording against the original announcements

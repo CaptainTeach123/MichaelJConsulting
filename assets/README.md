@@ -1,9 +1,6 @@
 # Assets
 
-Put Mike's portrait photograph here as **`mike-muirhead.jpg`** — the About
-section (`index.html`) references `assets/mike-muirhead.jpg` and will show
-it automatically once the file exists (until then the frame degrades to a
-quiet navy panel with the caption).
-
-Easiest way: on GitHub, open this `assets/` folder → **Add file → Upload
-files** → drop the photo → commit.
+- `mike-muirhead.jpg` — Mike's portrait, shown in the About section.
+- `logo.webp` — the original Michael J. Muirhead Consulting logo. The site
+  renders the monogram as inline SVG (scalable, theme-matched), recreated
+  from this file; keep it here as the brand source of truth.
