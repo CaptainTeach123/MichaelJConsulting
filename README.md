@@ -53,10 +53,6 @@ address — update them if the site later moves to a custom domain.)
       `mike@michaeljconsulting.example` (a reserved placeholder domain).
       Search for `TODO` in `index.html` and replace it with Mike's real
       consulting address.
-- [ ] **Quote check**: the two colleague quotes (Matt Allen, Paul Mahlberg)
-      and Mike's own quotes were recovered from public articles via search
-      excerpts; verify exact wording against the original announcements
-      before launch.
 - [ ] Review all copy for accuracy with Mike, especially dates and figures.
 
 ## Sources
