@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#132433"/>
-  <path d="M36.5 10 18.5 36.5h11L26 54l19.5-26.5h-11z" fill="#d98a3a"/>
+  <rect width="64" height="64" rx="14" fill="#fbfaf6"/>
+  <g font-family="Cormorant Garamond, Georgia, 'Times New Roman', serif" font-weight="500" text-anchor="middle">
+    <text x="20" y="42" font-size="36" fill="#2b2f33">M</text>
+    <text x="44" y="42" font-size="36" fill="#2b2f33">M</text>
+    <text x="32" y="50" font-size="38" fill="#e2a52e">J</text>
+  </g>
 </svg>

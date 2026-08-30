@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Michael Muirhead — Municipal Electric Utility Consulting
+   Michael J. Muirhead — Municipal Electric Utility Consulting
    Design system: warm paper ground, deep utility navy, copper accent.
    Type: Source Serif 4 (display) + Inter (text/UI).
    ========================================================================== */
@@ -25,7 +25,9 @@
   --faint-on-navy: #a9b6c2;
 
   --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-brand: "Cormorant Garamond", "Source Serif 4", Georgia, serif;
   --font-text: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --brand-gold: #e2a52e;
 
   --measure: 62ch;
   --radius: 10px;
@@ -55,6 +57,7 @@ body {
 }
 
 img, svg { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
@@ -200,14 +203,24 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   color: var(--ink);
 }
 .brand-mark {
-  width: 38px;
-  height: 38px;
+  width: 52px;
+  height: 40px;
   flex: none;
 }
+.brand-mark text {
+  font-family: var(--font-brand);
+  font-weight: 500;
+  font-size: 58px;
+  text-anchor: middle;
+}
+.brand-mark .mono-m { fill: var(--ink); }
+.brand-mark .mono-j { fill: var(--brand-gold); font-size: 64px; }
 .brand-name {
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   line-height: 1.2;
 }
 .brand-name small {
@@ -410,11 +423,13 @@ section { padding-block: clamp(4rem, 9vw, 7rem); }
   align-items: flex-end;
   box-shadow: var(--shadow-lift);
 }
-.portrait-frame svg.portrait-art {
+.portrait-photo {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
 }
 .portrait-caption {
   position: relative;

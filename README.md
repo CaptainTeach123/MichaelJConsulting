@@ -1,8 +1,8 @@
-# Michael Muirhead — Municipal Electric Utility Consulting
+# Michael J. Muirhead — Municipal Electric Utility Consulting
 
-A single-page consulting website for Michael "Mike" Muirhead, retired Director
-of Public Works & Utilities for Garden City, Kansas, and longtime KMEA
-Executive Committee officer, now consulting in the municipal electric
+A single-page consulting website for Michael J. "Mike" Muirhead, retired
+Director of Public Works & Utilities for Garden City, Kansas, and longtime
+KMEA Executive Committee officer, now consulting in the municipal electric
 utilities space.
 
 The design takes inspiration from premium engineering-consultancy sites
@@ -15,12 +15,16 @@ Plain, dependency-free static HTML and CSS — no build step, no framework.
 
 - `index.html` — the entire site (single page, anchored sections)
 - `styles.css` — design system and layout
-- `favicon.svg` — site icon
+- `favicon.svg` — site icon (MJM monogram)
+- `og-image.png` — social-share preview card
+- `assets/` — put `mike-muirhead.jpg` (his portrait) here
 
-Typography is loaded from Google Fonts (Source Serif 4 + Inter); everything
-else is self-contained, including all illustrations (inline SVG). The only
-JavaScript is a small inline snippet for the mobile menu; the site works
-fully with JavaScript disabled.
+The MJM monogram from Mike's logo is recreated as scalable inline SVG
+(Cormorant Garamond with the gold J) in the header, favicon, and social
+card. Typography is loaded from Google Fonts (Cormorant Garamond +
+Source Serif 4 + Inter); everything else is self-contained, including all
+illustrations (inline SVG). The only JavaScript is a small inline snippet
+for the mobile menu; the site works fully with JavaScript disabled.
 
 ## Local preview
 
@@ -34,8 +38,14 @@ python3 -m http.server 8000
 ## Deploying
 
 The site is ready for any static host. For GitHub Pages: repository
-**Settings → Pages → Deploy from a branch**, choose the default branch and
-`/ (root)`.
+**Settings → Pages → Deploy from a branch**, choose the default branch
+(`claude/muirhead-consulting-site-a7lk6s`) and `/ (root)`. The site then
+serves at:
+
+    https://captainteach123.github.io/MichaelJConsulting/
+
+(The `og:url`/`og:image` meta tags in `index.html` already point at that
+address — update them if the site later moves to a custom domain.)
 
 ## Before launch — checklist
 
@@ -43,19 +53,12 @@ The site is ready for any static host. For GitHub Pages: repository
       `mike@michaeljconsulting.example` (a reserved placeholder domain).
       Search for `TODO` in `index.html` and replace it with Mike's real
       consulting address.
-- [ ] **Portrait photo**: the About section uses a monogram graphic as a
-      stand-in. Replace it with a real photograph of Mike (see the `TODO`
-      comment in the About section of `index.html`).
-- [ ] **Name check**: public sources consistently say "Mike Muirhead"; the
-      site uses "Michael Muirhead" formally. Confirm with Mike how he wants
-      his name rendered (and whether to add a middle initial).
+- [ ] **Portrait photo**: upload the portrait to `assets/mike-muirhead.jpg`
+      (see `assets/README.md`); the About section picks it up automatically.
 - [ ] **Quote check**: the two colleague quotes (Matt Allen, Paul Mahlberg)
       and Mike's own quotes were recovered from public articles via search
       excerpts; verify exact wording against the original announcements
       before launch.
-- [ ] **Social preview**: once the final domain is settled, uncomment the
-      `og:url` / `og:image` tags in `index.html` and point them at the
-      domain (an `og-image.png` card ships in this repo).
 - [ ] Review all copy for accuracy with Mike, especially dates and figures.
 
 ## Sources
